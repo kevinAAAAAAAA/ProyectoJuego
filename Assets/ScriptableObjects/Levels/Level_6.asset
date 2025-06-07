@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd118f4c5836f2b4e8b8b477ac6c7d90, type: 3}
+  m_Name: Level_6
+  m_EditorClassIdentifier: 
+  objectiveDescription: Hay un muro a 3 pasos. Avanza si no hay pared, si la hay,
+    gira a la izquierda.
+  playerStartPosition: {x: 0, y: 0, z: 0}
+  goalPosition: {x: 0, y: 0, z: 5}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 1}
+  exampleSolutionCode: "VARIABLE pasos = 3\r\nMOVER_ADELANTE(pasos) // Se chocar\xE1
+    si no usa condicional\r\nSI (HAY_PARED_ADELANTE()) ENTONCES\r\n    GIRAR_IZQUIERDA()\r\n   
+    MOVER_ADELANTE(1) // Para salir del frente de la pared\r\nFINSI\r\n// El jugador
+    necesitar\xE1 m\xE1s c\xF3digo para llegar a la meta, este es solo el condicional"
+  wallPositions:
+  - {x: 0, y: 0, z: 3}
